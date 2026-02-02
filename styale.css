@@ -1,0 +1,56 @@
+styale.css
+/*
+this is reset for may document
+*/
+{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box ;
+
+}
+/*
+    Boot css
+*/
+ 
+ .container: {
+ 	    margin: 0;
+ 	    max-width: 960px;
+ 	    padding: 0 2%;
+
+ };
+   /*
+      Menu Stayle 
+   */
+   
+    <nav{
+    	background: #2196f3;
+    	padding: 10px;
+    	text-align: center;
+    }
+
+    nav ul{
+    	list-style-type:none;
+
+    }
+    li.menu-item{
+    	display:inline-block;
+    	margin: 0 10px;
+
+    }
+
+    li.menu-item > a{
+    	text-decoration: none;
+    	color: white;
+    	font-family: verdana;
+    }
+
+    footer{
+    	position: fixed;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	background: #0d47a1;
+    	text-align: center;
+    	color: white;
+
+    }
