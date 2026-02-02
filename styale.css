@@ -1,56 +1,69 @@
-styale.css
 /*
-this is reset for may document
+This is a reset for my document.
+CORREÇÃO: Adicionado o seletor universal '*' para aplicar a todos os elementos.
 */
-{
+* {
  margin: 0;
  padding: 0;
- box-sizing:border-box ;
-
+ box-sizing: border-box;
 }
+
 /*
     Boot css
+CORREÇÃO: Removido o ':' incorreto antes da chave.
 */
- 
- .container: {
- 	    margin: 0;
- 	    max-width: 960px;
- 	    padding: 0 2%;
+.container {
+    margin: 0 auto; /* Alterado para centralizar o container */
+    max-width: 960px;
+    padding: 0 2%;
+}
+/* OBSERVAÇÃO: Removido o ponto-e-vírgula (;) após a chave de fechamento, pois não é necessário no CSS. */
 
- };
-   /*
-      Menu Stayle 
-   */
-   
-    <nav{
-    	background: #2196f3;
-    	padding: 10px;
-    	text-align: center;
-    }
+/*
+      Menu Style
+CORREÇÃO: O comentário anterior foi fechado. Este é um novo comentário.
+*/
+nav {
+    background: #2196f3;
+    padding: 10px;
+    text-align: center;
+}
 
-    nav ul{
-    	list-style-type:none;
+nav ul {
+    list-style-type: none;
+}
 
-    }
-    li.menu-item{
-    	display:inline-block;
-    	margin: 0 10px;
+.menu-item { /* O seletor pode ser simplificado, já que a classe é única */
+    display: inline-block;
+    margin: 0 10px;
+}
 
-    }
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif; /* Adicionado fallback de fonte */
+    font-weight: bold; /* Sugestão para melhorar a legibilidade */
+    padding: 5px 10px; /* Sugestão: dar mais área clicável ao link */
+    border-radius: 4px; /* Sugestão: cantos levemente arredondados */
+    transition: background-color 0.3s; /* Sugestão: efeito suave ao passar o mouse */
+}
 
-    li.menu-item > a{
-    	text-decoration: none;
-    	color: white;
-    	font-family: verdana;
-    }
+/* Sugestão: Efeito de hover para os links do menu */
+.menu-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-    footer{
-    	position: fixed;
-    	left: 0;
-    	bottom: 0;
-    	width: 100%;
-    	background: #0d47a1;
-    	text-align: center;
-    	color: white;
-
-    }
+footer {
+    /* CORREÇÃO/ALTERNATIVA: Troque 'fixed' por 'relative' se não quiser o rodapé sempre visível.
+       Com 'fixed', o conteúdo principal pode ficar escondido atrás dele.
+    */
+    position: relative; /* Substitui 'fixed'. Remova esta linha se preferir o rodapé fixo. */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0d47a1;
+    text-align: center;
+    color: white;
+    padding: 15px 0; /* Aumentado o padding para melhor aparência */
+    margin-top: 40px; /* Adiciona espaço antes do rodapé */
+}
