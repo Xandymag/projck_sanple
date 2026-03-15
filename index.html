@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Adicione o atributo 'lang' para acessibilidade -->
+<html lang="pt-BR"> <!-- Mudei de 'en' para 'pt-BR' -->
 <head>
     <meta charset="utf-8">
     <!-- Meta viewport única e completa -->
@@ -12,32 +12,112 @@
     
     <!-- Inclui CSS File -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- 🆕 OPÇÃO 1: CSS adicional direto no HTML (se quiser testar rápido) -->
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2196f3;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site - Danki Code Sample</title>
+    
+    <meta name="description" content="This is a sample website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="xandycode">
+    
+    <!-- Inclui CSS File -->
+    <link href="styale.css" rel="stylesheet">
+    
+    <!-- 🆕 CSS adicional (opcional) -->
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2196f3;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navegação: Estrutura corrigida -->
-    <nav>
+    <!-- Skip link para acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <!-- Navegação -->
+    <nav aria-label="Main navigation">
         <div class="container">
             <ul>
-                <li class="menu-item"><a href="#">Home</a></li> <!-- Link com '#' -->
+                <li class="menu-item"><a href="/">Home</a></li>
                 <li class="menu-item"><a href="#about">About</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </div><!--container-->
     </nav>
 
-    <section class="main-content">
-        <div class="container">
-            <!-- Botão com sintaxe corrigida -->
-            <button class="my-btn">Click me!</button>
-        </div><!--container-->
-    </section><!--main-content-->
+    <!-- Tag MAIN com conteúdo principal -->
+    <main id="main-content">
+        <section class="main-content">
+            <div class="container">
+                <h1>Bem-vindo ao Meu Site</h1>
+                
+                <!-- Botão com onclick funcionando -->
+                <button onclick="someEvent()" class="my-btn">Click me!</button>
+            </div><!--container-->
+        </section><!--main-content-->
+
+        <!-- Seção About -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Conteúdo sobre a empresa ou projeto. Aqui você pode falar sobre sua história, missão e valores.</p>
+            </div><!--container-->
+        </section><!--about-section-->
+
+        <!-- Seção Contact -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Entre em contato conosco:</p>
+                <p>Email: contato@exemplo.com<br>
+                Telefone: (11) 99999-9999</p>
+            </div><!--container-->
+        </section><!--contact-section-->
+    </main>
 
     <footer>
         <div class="container">
-            <!-- Corrigido typo 'Corpyright' -->
             <p>Copyright - All Rights Reserved to Xandycode</p>
         </div><!--container-->
     </footer>
-
+    
+    <!-- JavaScript Files - CORRIGIDO! -->
+    <script src="js/functions.js"></script>
+    
+    <!-- 🆕 OU se preferir, pode colocar a função diretamente aqui -->
+    <script>
+        function someEvent() {
+            alert("hello word from Danki code!");
+            alert("this is a projec from curse English for programing");
+        }
+    </script>
 </body>
 </html>
