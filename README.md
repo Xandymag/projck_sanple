@@ -12,7 +12,7 @@ This is a demonstration project focused on building a responsive landing page. A
 * JavaScript
 
 **Live Preview:**
-To see the interface rendered directly in your browser, [click here](link_do_seu_pages).
+To see the interface rendered directly in your browser, [click here](https://xandymag.github.io/projck_sanple/#about).
 
 ---
 
